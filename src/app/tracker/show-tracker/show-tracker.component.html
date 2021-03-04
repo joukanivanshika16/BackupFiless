@@ -1,0 +1,17 @@
+<html>
+<body>
+<h1>Welcome To Car Service Tracker</h1>
+<div class="appoinmentid">
+    <h3 style="margin-top: 3%; text-align: center;">Appoinment ID:</h3>
+</div>
+ <div class="container" >
+ <span *ngFor="let item of counts;let i = index" >
+   <span class="circle-desc" [class.circle-desc-active]="orderStatus == item">{{ item }}</span>
+   <span class="circles" [class.active]="orderStatus == item"></span>
+   <span class="bar" *ngIf="(i != counts.length-1)"></span>
+ </span>
+ </div>
+ </body>
+ </html>
+
+

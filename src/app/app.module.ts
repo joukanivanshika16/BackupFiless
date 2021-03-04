@@ -3,10 +3,17 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { TrackerComponent } from './tracker/tracker.component';
+import { ShowTrackerComponent } from './tracker/show-tracker/show-tracker.component';
+import { LoginComponent } from './login/login.component';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TrackerComponent,
+    ShowTrackerComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,

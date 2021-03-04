@@ -1,0 +1,103 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+    
+    background-image:url("/assets/bg_tracker.jpg") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+input.form-control,input.form-control:focus{
+    background-color: #f9fafc;
+    color: rgb(5, 5, 5);
+    border: 1px solid #080808;
+
+}
+
+input.form-control:focus{
+    box-shadow: none;
+}
+
+button[type=submit].btn{
+    border-radius: 20px;
+    margin-top:8px;
+    margin-bottom: 2px;
+    background-color: #080808;
+    color: #fff;
+}
+
+div.form-group label:not(.text-danger){
+    color: #0c0c0c;
+    font-weight: 700;
+}
+
+div.form-group.required>label:first-child:after{
+    content:'*';
+    color: rgb(10, 10, 10);
+    padding-left: 5px;
+}
+
+#toast-container > div {
+    opacity:1;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+    justify-content: center;
+    width: 100%;
+    margin-top: 10%;
+    padding: 20px;
+  }
+
+  .wrapped-div {
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border-radius: 10px 10px 10px 10px;
+    background: #98a0b656;
+    padding: 30px;
+    width: 90%;
+    max-width: 450px;
+    position: relative;
+    padding: 0px;
+    -webkit-box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+    box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+  }
+
+  /* Tabs */
+.tab-header{
+    text-align: center;
+
+}
+
+  .tab-header h1.active {
+    color: rgb(8, 8, 8);
+    border-bottom: 4px solid rgb(8, 8, 8);
+  }
+
+  .tab-header h1 {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    display:inline-block;
+    padding: 30px 40px 10px 40px;
+    cursor: pointer;
+    color: #0d0d0e;
+    border-bottom: 2px solid #080808;
+  }
+
+  .tab-header h1:focus {
+      outline: none;
+  }
+
+  form{
+      margin: 0px 16px;
+  }
+
+ div.form-group input.invalid{
+    border: 1px solid #dc3545; 
+ }
+ div.form-group label:first-child{
+    text-transform: uppercase;
+    font-size: 0.9rem;
+ }
